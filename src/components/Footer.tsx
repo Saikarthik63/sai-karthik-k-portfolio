@@ -1,11 +1,12 @@
 import { useState } from 'react'
-import { Copy, Check } from 'lucide-react'
+import { Copy, Check, Download } from 'lucide-react'
 import { usePortfolio } from '../hooks/usePortfolio'
 import SocialLinks from './SocialLinks'
 
 const NAV = [
   { label: 'Home', href: '#home' },
   { label: 'About', href: '#about' },
+  { label: 'Domains', href: '#domains' },
   { label: 'Skills', href: '#skills' },
   { label: 'Experience', href: '#experience' },
   { label: 'Projects', href: '#projects' },
@@ -27,7 +28,26 @@ export default function Footer() {
 
   return (
     <footer id="contact" className="pad border-t border-panel-line pt-20">
-      <div className="grid gap-12 pb-16 md:grid-cols-3">
+      <p className="trace-line pl-10 font-mono text-xs tracking-[0.2em] text-copper">
+        08 / CONTACT
+      </p>
+      <h2 className="mt-4 font-display text-3xl font-semibold text-silk md:text-4xl">
+        Let's talk
+      </h2>
+      <p className="mt-4 max-w-xl text-muted">
+        Open to opportunities in embedded systems, firmware, software development, AI/ML, IoT,
+        and automotive embedded systems.
+      </p>
+
+      <a
+        href={`${import.meta.env.BASE_URL}${profile.resumeFile}`}
+        download
+        className="mt-6 inline-flex items-center gap-2 rounded-full border border-signal-dim bg-signal-dim/20 px-5 py-2.5 font-mono text-xs tracking-widest text-signal transition-colors hover:bg-signal-dim/30"
+      >
+        <Download size={14} /> DOWNLOAD RESUME
+      </a>
+
+      <div className="mt-16 grid gap-12 pb-16 md:grid-cols-3">
         <div>
           <p className="font-display text-2xl font-semibold text-silk">
             {profile.shortName}

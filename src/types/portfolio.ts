@@ -16,12 +16,19 @@ export interface Profile {
   location: string
   status: string
   bio: string
+  resumeFile: string
   social: SocialLinks
 }
 
 export interface SpecItem {
   label: string
   value: string
+}
+
+export interface CoreDomain {
+  name: string
+  icon: string
+  description: string
 }
 
 export interface SkillCategory {
@@ -41,13 +48,11 @@ export interface Experience {
 export interface Project {
   id: string
   title: string
-  subtitle: string
+  domain: string
   description: string
   stack: string[]
-  role: string
   year: string
-  link: string
-  highlight: boolean
+  highlights: string[]
 }
 
 export interface Education {
@@ -61,13 +66,16 @@ export interface Certification {
   name: string
   issuer: string
   date: string
+  id: string
 }
 
 export interface PortfolioData {
   profile: Profile
   specSheet: SpecItem[]
-  skills: { categories: SkillCategory[] }
+  coreDomains: CoreDomain[]
+  technicalSkills: SkillCategory[]
   experience: Experience[]
+  projectDomains: string[]
   projects: Project[]
   education: Education[]
   certifications: Certification[]

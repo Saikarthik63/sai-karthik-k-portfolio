@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar'
 import HeroSection from './components/HeroSection'
 import AboutSection from './components/AboutSection'
+import CoreDomains from './components/CoreDomains'
 import SkillsSection from './components/SkillsSection'
 import ExperienceSection from './components/ExperienceSection'
 import ProjectsSection from './components/ProjectsSection'
@@ -14,6 +15,7 @@ function App() {
       <main>
         <HeroSection />
         <AboutSection />
+        <CoreDomains />
         <SkillsSection />
         <ExperienceSection />
         <ProjectsSection />

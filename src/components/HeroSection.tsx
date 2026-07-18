@@ -31,10 +31,10 @@ export default function HeroSection() {
         </p>
 
         <p
-          className="reveal mt-2 font-mono text-sm tracking-wide text-signal"
+          className="reveal mt-2 max-w-2xl font-mono text-sm leading-relaxed tracking-wide text-signal"
           style={{ animationDelay: '0.22s' }}
         >
-          {profile.role} · {profile.specialization}
+          {profile.specialization}
         </p>
 
         <div
