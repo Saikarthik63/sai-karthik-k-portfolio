@@ -1,0 +1,151 @@
+{
+  "profile": {
+    "name": "Sai Karthik K",
+    "shortName": "Sai Karthik",
+    "tagline": "Building intelligent systems at the hardware–software boundary",
+    "role": "Embedded Systems Engineer",
+    "specialization": "Embedded Systems · IoT · Firmware · Edge AI",
+    "location": "Chennai, Tamil Nadu",
+    "status": "M.Tech · Class of 2027",
+    "bio": "M.Tech student in Embedded Systems Technology at SRMIST, with hands-on experience across firmware development, RTOS, embedded Linux, sensor interfacing, computer vision, and edge AI. I like taking a system from a bare schematic to a working, intelligent product — currently building a federated-learning intrusion detection system that runs on an ESP32.",
+    "social": {
+      "github": "",
+      "instagram": "",
+      "linkedin": "https://linkedin.com/in/saikarthikk76",
+      "email": "ksaikarthik513@gmail.com",
+      "phone": "+91 7358255602",
+      "website": ""
+    }
+  },
+  "specSheet": [
+    { "label": "CGPA", "value": "8.46 / 10" },
+    { "label": "Location", "value": "Chennai, TN" },
+    { "label": "Focus", "value": "Embedded · IoT · Edge AI" },
+    { "label": "Languages", "value": "Tamil, English" }
+  ],
+  "skills": {
+    "categories": [
+      {
+        "name": "Languages",
+        "items": ["C", "C++", "Embedded C", "Python", "SQL", "Core Java"]
+      },
+      {
+        "name": "Tools & Platforms",
+        "items": ["Keil uVision", "STM32CubeIDE", "MPLAB X IDE", "Xilinx Vivado", "Proteus", "EasyEDA", "VS Code", "Jupyter Notebook", "Google Colab", "MATLAB", "Linux", "MySQL", "Power BI"]
+      },
+      {
+        "name": "Domain Knowledge",
+        "items": ["Embedded Systems", "Internet of Things (IoT)", "Automotive Embedded Systems", "Artificial Intelligence / ML", "CS Fundamentals"]
+      },
+      {
+        "name": "Core Technical",
+        "items": ["Firmware Development", "RTOS", "Embedded Linux", "Hardware-Software Integration", "Sensor Interfacing", "Communication Protocols", "Computer Vision", "Debugging & Testing"]
+      }
+    ]
+  },
+  "experience": [
+    {
+      "company": "Mirror Technologies Pvt. Ltd.",
+      "role": "PCB Design & Embedded Hardware Intern",
+      "period": "Jan 2025 — Mar 2025",
+      "location": "Ashok Nagar, Chennai",
+      "summary": "Supported board-level design and validation for production-bound embedded hardware.",
+      "highlights": [
+        "Assisted in PCB design, schematic analysis, component placement, and layout verification.",
+        "Supported prototype assembly, testing, and hardware validation for embedded boards.",
+        "Performed circuit debugging and troubleshooting to ensure reliable hardware performance."
+      ]
+    },
+    {
+      "company": "EMCOG Solutions Pvt. Limited",
+      "role": "Embedded Systems Intern",
+      "period": "Jun 2024",
+      "location": "Avadi, Chennai",
+      "summary": "Built firmware and integrated sensors for real-time embedded applications.",
+      "highlights": [
+        "Assisted in developing Embedded C firmware and hardware–software integrated applications.",
+        "Integrated sensors and peripherals for real-time embedded system development.",
+        "Performed debugging, testing, and validation to ensure reliable system performance."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "fl-ids",
+      "title": "FL-IDS: Federated Learning Intrusion Detection",
+      "subtitle": "M.Tech Capstone · in progress",
+      "description": "A federated-learning intrusion detection system with quantization-aware training, designed to run directly on ESP32 microcontrollers. Built on a research gap identified across CICIoT2023, N-BaIoT, and related IoT-attack datasets.",
+      "stack": ["ESP32", "Federated Learning", "Quantization-Aware Training", "TinyML", "IoT Security"],
+      "role": "Researcher & Developer",
+      "year": "2026",
+      "link": "",
+      "highlight": true
+    },
+    {
+      "id": "irrigation",
+      "title": "Energy-Aware Adaptive Irrigation Control",
+      "subtitle": "Embedded Systems & IoT",
+      "description": "An ESP32-based smart irrigation system with adaptive control driven by real-time soil moisture data and energy-efficient scheduling via deep sleep mode.",
+      "stack": ["ESP32", "Embedded C", "Edge Computing", "Soil Moisture Sensor"],
+      "role": "Developer",
+      "year": "Mar – Apr 2026",
+      "link": "",
+      "highlight": false
+    },
+    {
+      "id": "indoor-env",
+      "title": "Smart Indoor Environment Monitoring System",
+      "subtitle": "Embedded Systems & IoT",
+      "description": "A multi-sensor ESP32 system tracking indoor air quality with a computed Indoor Health Index (IHI) and automated alerts when conditions drift.",
+      "stack": ["ESP32", "Embedded C", "Sensor Interfacing", "IoT"],
+      "role": "Developer",
+      "year": "Oct – Nov 2025",
+      "link": "",
+      "highlight": false
+    },
+    {
+      "id": "voice-assistant",
+      "title": "AI Voice Assistant Using ESP32",
+      "subtitle": "IoT & AI",
+      "description": "An ESP32-based voice assistant for real-time command recognition and device control, integrating voice recognition with wireless communication for smart-home automation.",
+      "stack": ["ESP32", "Embedded C", "Voice Recognition", "Wireless Communication"],
+      "role": "Developer",
+      "year": "Aug 2024 – Apr 2025",
+      "link": "",
+      "highlight": false
+    },
+    {
+      "id": "gesture-volume",
+      "title": "Hand Gesture-Based Volume Control",
+      "subtitle": "Computer Vision & AI",
+      "description": "A real-time, touch-free volume control system using hand tracking and gesture recognition.",
+      "stack": ["Python", "OpenCV", "MediaPipe"],
+      "role": "Developer",
+      "year": "Feb – Apr 2024",
+      "link": "",
+      "highlight": false
+    }
+  ],
+  "education": [
+    {
+      "institution": "SRMIST, Kattankulathur",
+      "credential": "M.Tech, Embedded System Technology",
+      "detail": "CGPA 8.46 / 10",
+      "period": "2025 — 2027"
+    },
+    {
+      "institution": "St. Joseph's College of Engineering",
+      "credential": "B.E., Electronics and Communication Engineering",
+      "detail": "68.8%",
+      "period": "2021 — 2025"
+    }
+  ],
+  "certifications": [
+    { "name": "Academy Accreditation — Generative AI Fundamentals", "issuer": "Databricks", "date": "Jul 2026" },
+    { "name": "Introduction to Embedded Linux", "issuer": "Microchip University", "date": "Jun 2026" },
+    { "name": "Claude 101", "issuer": "Anthropic", "date": "Jun 2026" },
+    { "name": "Foundations of Prompt Engineering", "issuer": "Amazon Web Services (AWS)", "date": "Jun 2026" },
+    { "name": "Embedded Systems", "issuer": "LaunchED Global", "date": "Nov 2025" },
+    { "name": "VLSI Design", "issuer": "Udemy", "date": "Jun 2023" }
+  ]
+}
