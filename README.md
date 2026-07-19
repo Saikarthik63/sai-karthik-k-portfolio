@@ -57,6 +57,28 @@ skill-category labels, certification icons, and the resume-download button. The 
 text, and card colors are unchanged, so the effect reads as a professional multicolor tech
 theme rather than a redesign.
 
+## Premium visual pass (Framer Motion + glassmorphism)
+
+This layer is 100% visual — no content, copy, links, or section order changed from the prior
+version (`src/data/portfolio.json` is untouched).
+
+- **Glassmorphism**: `.glass` / `.glass-strong` utilities (blurred translucent panels) on every
+  card — domains, skills, projects, certifications, experience, footer.
+- **Glow**: `.glow-ring-<color>` utilities add a colored ring + soft blur shadow on hover,
+  matched per section/domain accent.
+- **Gradient text**: the hero name uses an animated cyan → silk → purple → emerald sheen
+  (`.text-gradient`).
+- **Depth**: `CircuitBackground` now layers ambient blurred color blobs, multicolor traveling
+  signal pulses, scattered pulsing particles, and a faint grain texture behind the circuit-trace
+  grid.
+- **Motion**: `src/components/motion/Reveal.tsx` provides `Reveal` / `StaggerGroup` /
+  `StaggerItem` — Framer Motion scroll-triggered reveals used across every section. The Projects
+  filter uses a `layoutId`-based sliding pill. Cards lift on hover via spring transitions.
+  `MotionConfig reducedMotion="user"` in `App.tsx` makes all of this respect the OS-level
+  "reduce motion" setting automatically.
+- **Navbar**: persistent glass background, active-section indicator driven by
+  `IntersectionObserver` (purely visual — same links, same click behavior as before).
+
 ## Design notes
 
 - Palette: near-black PCB-style background, copper + signal-green accents, off-white

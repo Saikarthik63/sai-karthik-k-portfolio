@@ -49,7 +49,7 @@ export default function SocialLinks() {
           target="_blank"
           rel="noreferrer"
           aria-label={label}
-          className="flex h-9 w-9 items-center justify-center rounded-full border border-panel-line text-muted transition-colors hover:border-signal hover:text-signal"
+          className="glass glow-ring glow-ring-cyan flex h-9 w-9 items-center justify-center rounded-full text-muted transition-colors hover:text-signal"
         >
           <Icon size={16} />
         </a>

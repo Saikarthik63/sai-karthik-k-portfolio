@@ -7,22 +7,25 @@ import ExperienceSection from './components/ExperienceSection'
 import ProjectsSection from './components/ProjectsSection'
 import EducationCerts from './components/EducationCerts'
 import Footer from './components/Footer'
+import { MotionConfig } from 'framer-motion'
 
 function App() {
   return (
-    <div className="min-h-screen bg-void">
-      <Navbar />
-      <main>
-        <HeroSection />
-        <AboutSection />
-        <CoreDomains />
-        <SkillsSection />
-        <ExperienceSection />
-        <ProjectsSection />
-        <EducationCerts />
-      </main>
-      <Footer />
-    </div>
+    <MotionConfig reducedMotion="user">
+      <div className="min-h-screen bg-void">
+        <Navbar />
+        <main>
+          <HeroSection />
+          <AboutSection />
+          <CoreDomains />
+          <SkillsSection />
+          <ExperienceSection />
+          <ProjectsSection />
+          <EducationCerts />
+        </main>
+        <Footer />
+      </div>
+    </MotionConfig>
   )
 }
 

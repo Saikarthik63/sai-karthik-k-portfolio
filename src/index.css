@@ -81,6 +81,78 @@
     padding-right: clamp(1.5rem, 6vw, 6rem);
   }
 
+  /* ---------- Premium glass surface ---------- */
+  .glass {
+    background: linear-gradient(180deg, rgba(234, 231, 221, 0.05), rgba(234, 231, 221, 0.015));
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(234, 231, 221, 0.08);
+  }
+  .glass-strong {
+    background: linear-gradient(180deg, rgba(234, 231, 221, 0.07), rgba(234, 231, 221, 0.02));
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(234, 231, 221, 0.1);
+  }
+
+  /* ---------- Gradient text ---------- */
+  .text-gradient {
+    background-image: linear-gradient(100deg, var(--color-cyan) 0%, var(--color-silk) 32%, var(--color-purple) 68%, var(--color-emerald) 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: sheen 9s ease-in-out infinite;
+  }
+  @keyframes sheen {
+    0%, 100% { background-position: 0% center; }
+    50% { background-position: 100% center; }
+  }
+
+  /* ---------- Glow rings (per accent) ---------- */
+  .glow-ring-cyan:hover    { box-shadow: 0 0 0 1px rgba(34,211,238,0.45),  0 0 32px -4px rgba(34,211,238,0.35); }
+  .glow-ring-blue:hover    { box-shadow: 0 0 0 1px rgba(77,141,255,0.45), 0 0 32px -4px rgba(77,141,255,0.35); }
+  .glow-ring-purple:hover  { box-shadow: 0 0 0 1px rgba(180,139,250,0.45),0 0 32px -4px rgba(180,139,250,0.35); }
+  .glow-ring-emerald:hover { box-shadow: 0 0 0 1px rgba(52,211,153,0.45), 0 0 32px -4px rgba(52,211,153,0.35); }
+  .glow-ring-orange:hover  { box-shadow: 0 0 0 1px rgba(251,146,60,0.45), 0 0 32px -4px rgba(251,146,60,0.35); }
+  .glow-ring { transition: box-shadow 0.4s ease, transform 0.4s ease, border-color 0.4s ease; }
+
+  /* ---------- Ambient glow blobs ---------- */
+  .blob {
+    position: absolute;
+    border-radius: 9999px;
+    filter: blur(80px);
+    opacity: 0.28;
+    pointer-events: none;
+  }
+  @keyframes drift-a {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(4%, -6%) scale(1.08); }
+  }
+  @keyframes drift-b {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(-5%, 5%) scale(1.05); }
+  }
+  .blob-a { animation: drift-a 18s ease-in-out infinite; }
+  .blob-b { animation: drift-b 22s ease-in-out infinite; }
+
+  /* ---------- Particles ---------- */
+  @keyframes particle-pulse {
+    0%, 100% { opacity: 0.15; transform: scale(1); }
+    50% { opacity: 0.7; transform: scale(1.4); }
+  }
+
+  /* ---------- Grain (subtle premium texture) ---------- */
+  .grain {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.035;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
   @keyframes pulse-travel {
     0% { offset-distance: 0%; opacity: 0; }
     8% { opacity: 1; }
@@ -92,6 +164,12 @@
     0%, 100% { opacity: 0.25; }
     50% { opacity: 1; }
   }
+
+  @keyframes node-pulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(77, 255, 168, 0.45); }
+    50% { box-shadow: 0 0 0 6px rgba(77, 255, 168, 0); }
+  }
+  .node-pulse { animation: node-pulse 2.4s ease-in-out infinite; }
 
   .reveal {
     animation: reveal-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
