@@ -13,7 +13,7 @@ export default function ProjectsSection() {
 
   return (
     <section id="projects" className="pad border-t border-panel-line py-24 md:py-32">
-      <p className="trace-line pl-10 font-mono text-xs tracking-[0.2em] text-copper">
+      <p className="trace-line pl-10 font-mono text-xs tracking-[0.2em] text-cyan">
         05 / PROJECTS
       </p>
       <h2 className="mt-4 font-display text-3xl font-semibold text-silk md:text-4xl">
@@ -25,9 +25,9 @@ export default function ProjectsSection() {
           <button
             key={f}
             onClick={() => setActive(f)}
-            className={`rounded-full border px-4 py-2 font-mono text-xs tracking-wide transition-colors ${
+            className={`rounded-full border px-4 py-2 font-mono text-xs tracking-wide transition-all ${
               active === f
-                ? 'border-signal bg-signal-dim/20 text-signal'
+                ? 'border-transparent bg-gradient-to-r from-cyan/25 to-purple/25 text-silk shadow-[0_0_0_1px_rgba(34,211,238,0.4)]'
                 : 'border-panel-line text-muted hover:border-copper-dim hover:text-silk'
             }`}
           >

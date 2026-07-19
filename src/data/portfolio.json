@@ -2,8 +2,8 @@
   "profile": {
     "name": "Sai Karthik K",
     "shortName": "Sai Karthik",
-    "tagline": "Engineering across the stack — from silicon to software to intelligent systems",
-    "role": "Embedded Systems · Software · AI/ML Engineer",
+    "tagline": "Passionate about Embedded Systems, AI, IoT, Automotive Technologies, and Software Development — building practical solutions through continuous learning and hands-on projects.",
+    "role": "M.Tech Student · Embedded Systems Technology",
     "specialization": "Embedded Systems · IoT · AI/ML · Computer Vision · Automotive",
     "location": "Chennai, Tamil Nadu",
     "status": "M.Tech · Class of 2027",
@@ -28,42 +28,56 @@
     {
       "name": "Embedded Systems",
       "icon": "cpu",
-      "description": "Hardware–software integration, sensor interfacing, and hands-on debugging across embedded platforms."
+      "accent": "cyan",
+      "description": "Strong fundamentals from an M.Tech specialization, with hands-on hardware–software integration and sensor interfacing."
     },
     {
-      "name": "Firmware Development",
+      "name": "Embedded Software",
       "icon": "chip",
-      "description": "Embedded C firmware for real-time, resource-constrained systems, from bring-up through validation."
+      "accent": "blue",
+      "description": "Embedded C firmware development for real-time, resource-constrained systems, from bring-up through validation."
     },
     {
       "name": "Internet of Things (IoT)",
       "icon": "wifi",
+      "accent": "purple",
       "description": "Connected, sensor-driven devices — from environment monitoring to automated smart-device control."
     },
     {
       "name": "Artificial Intelligence",
       "icon": "brain",
+      "accent": "emerald",
       "description": "Applying AI to real-world embedded and software problems, from voice interaction to automation."
     },
     {
       "name": "Machine Learning",
       "icon": "network",
-      "description": "Foundations in ML applied alongside embedded and computer-vision systems."
+      "accent": "orange",
+      "description": "Foundational ML knowledge applied alongside embedded and computer-vision coursework and projects."
     },
     {
       "name": "Computer Vision",
       "icon": "eye",
+      "accent": "cyan",
       "description": "Real-time vision pipelines for gesture and hand-tracking based interaction."
+    },
+    {
+      "name": "Edge AI",
+      "icon": "zap",
+      "accent": "blue",
+      "description": "Interest in running intelligent, energy-aware logic directly on-device, explored through edge-computing based embedded projects."
+    },
+    {
+      "name": "Automotive Technologies",
+      "icon": "car",
+      "accent": "purple",
+      "description": "Domain knowledge in automotive embedded systems as part of a broader embedded-systems specialization."
     },
     {
       "name": "Software Development",
       "icon": "code",
+      "accent": "emerald",
       "description": "Solid CS fundamentals and software engineering practice underpinning every embedded and AI project."
-    },
-    {
-      "name": "Automotive Embedded Systems",
-      "icon": "car",
-      "description": "Domain knowledge in automotive embedded systems as part of a broader embedded-systems specialization."
     }
   ],
   "technicalSkills": [
@@ -73,11 +87,11 @@
     },
     {
       "name": "Embedded Technologies",
-      "items": ["RTOS", "Embedded Linux", "Hardware-Software Integration", "Sensor Interfacing", "Communication Protocols", "Hardware Debugging"]
+      "items": ["Embedded Software", "RTOS", "Embedded Linux", "Hardware-Software Integration", "Sensor Interfacing", "Communication Protocols", "Hardware Debugging"]
     },
     {
-      "name": "AI & Computer Vision",
-      "items": ["Artificial Intelligence (AI)", "Machine Learning (ML)", "Computer Vision", "OpenCV", "MediaPipe"]
+      "name": "AI, ML & Computer Vision",
+      "items": ["Artificial Intelligence (AI)", "Machine Learning (ML)", "Computer Vision", "OpenCV", "MediaPipe", "Edge AI", "Prompt Engineering", "Generative AI", "Claude (Anthropic)"]
     },
     {
       "name": "Development Tools",
@@ -118,12 +132,12 @@
       ]
     }
   ],
-  "projectDomains": ["Embedded Systems", "IoT", "AI & Computer Vision", "Edge Computing"],
+  "projectDomains": ["Embedded Systems", "IoT", "AI / Machine Learning", "Computer Vision"],
   "projects": [
     {
       "id": "indoor-env",
       "title": "Smart Indoor Environment Monitoring System",
-      "domain": "Embedded Systems",
+      "domain": "IoT",
       "description": "A multi-sensor ESP32 system tracking indoor air quality with a computed Indoor Health Index (IHI) and automated alerts when conditions drift.",
       "stack": ["ESP32", "Embedded C", "Sensor Interfacing", "IoT"],
       "year": "Oct – Nov 2025",
@@ -135,7 +149,7 @@
     {
       "id": "voice-assistant",
       "title": "AI Voice Assistant Using ESP32",
-      "domain": "IoT",
+      "domain": "AI / Machine Learning",
       "description": "An ESP32-based voice assistant for real-time command recognition and device control, integrating voice recognition with wireless communication for smart-device automation.",
       "stack": ["ESP32", "Embedded C", "Voice Recognition", "Wireless Communication"],
       "year": "Aug 2024 – Apr 2025",
@@ -147,7 +161,7 @@
     {
       "id": "gesture-volume",
       "title": "Hand Gesture-Based Volume Control System",
-      "domain": "AI & Computer Vision",
+      "domain": "Computer Vision",
       "description": "A real-time, touch-free volume control system using hand tracking and gesture recognition.",
       "stack": ["Python", "OpenCV", "MediaPipe"],
       "year": "Feb – Apr 2024",
@@ -159,7 +173,7 @@
     {
       "id": "irrigation",
       "title": "Energy-Aware Adaptive Irrigation Control",
-      "domain": "Edge Computing",
+      "domain": "Embedded Systems",
       "description": "An ESP32-based smart irrigation system with adaptive control driven by real-time soil-moisture data and energy-efficient scheduling via deep sleep mode.",
       "stack": ["ESP32", "Embedded C", "Edge Computing", "Soil Moisture Sensor"],
       "year": "Mar – Apr 2026",

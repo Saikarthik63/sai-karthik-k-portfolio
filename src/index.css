@@ -14,6 +14,17 @@
   --color-copper-dim: #8a5a37;
   --color-signal: #4dffa8;
   --color-signal-dim: #235b46;
+
+  --color-cyan: #22d3ee;
+  --color-cyan-dim: #164e58;
+  --color-blue: #4d8dff;
+  --color-blue-dim: #1e3a6e;
+  --color-purple: #b48bfa;
+  --color-purple-dim: #4a3670;
+  --color-emerald: #34d399;
+  --color-emerald-dim: #1c5e46;
+  --color-orange: #fb923c;
+  --color-orange-dim: #6e3f18;
 }
 
 @layer base {

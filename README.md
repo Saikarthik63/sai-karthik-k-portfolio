@@ -26,7 +26,7 @@ src/
     CircuitBackground.tsx   animated circuit-trace hero background
     HeroSection.tsx
     AboutSection.tsx
-    CoreDomains.tsx         8 domain cards (Embedded, Firmware, IoT, AI, ML, CV, Software, Automotive)
+    CoreDomains.tsx         9 domain cards (Embedded Systems, Embedded Software, IoT, AI, ML, CV, Edge AI, Automotive, Software Dev)
     SkillsSection.tsx       technical skills grouped by category
     ExperienceSection.tsx   internships
     ProjectsSection.tsx / ProjectCard.tsx   projects, filterable by domain
@@ -48,6 +48,14 @@ needs to be touched.
 - Leave a social link (`github`, `instagram`, `website`) as an empty string to hide its icon.
 - Replace `public/SaiKarthikK_Resume.pdf` with an updated resume any time — the filename is
   read from `profile.resumeFile` in the JSON, so update both together if you rename the file.
+
+## Multicolor theme
+
+Accent colors — cyan, electric blue, purple, emerald, and orange — are layered subtly on top of
+the existing dark PCB-style base: rotating through section eyebrows, core-domain icon tiles,
+skill-category labels, certification icons, and the resume-download button. The base surface,
+text, and card colors are unchanged, so the effect reads as a professional multicolor tech
+theme rather than a redesign.
 
 ## Design notes
 

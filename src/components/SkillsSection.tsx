@@ -1,11 +1,13 @@
 import { usePortfolio } from '../hooks/usePortfolio'
 
+const CATEGORY_COLORS = ['text-cyan', 'text-blue', 'text-purple', 'text-emerald', 'text-orange', 'text-cyan']
+
 export default function SkillsSection() {
   const { technicalSkills } = usePortfolio()
 
   return (
     <section id="skills" className="pad border-t border-panel-line py-24 md:py-32">
-      <p className="trace-line pl-10 font-mono text-xs tracking-[0.2em] text-copper">
+      <p className="trace-line pl-10 font-mono text-xs tracking-[0.2em] text-emerald">
         03 / TECHNICAL SKILLS
       </p>
       <h2 className="mt-4 font-display text-3xl font-semibold text-silk md:text-4xl">
@@ -13,12 +15,12 @@ export default function SkillsSection() {
       </h2>
 
       <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {technicalSkills.map((cat) => (
+        {technicalSkills.map((cat, i) => (
           <div
             key={cat.name}
             className="rounded-md border border-panel-line bg-panel/60 p-6 transition-colors hover:border-copper-dim"
           >
-            <p className="font-mono text-[11px] tracking-[0.2em] text-signal">
+            <p className={`font-mono text-[11px] tracking-[0.2em] ${CATEGORY_COLORS[i % CATEGORY_COLORS.length]}`}>
               {cat.name.toUpperCase()}
             </p>
             <div className="mt-4 flex flex-wrap gap-2">

@@ -5,7 +5,7 @@ export default function ExperienceSection() {
 
   return (
     <section id="experience" className="pad border-t border-panel-line py-24 md:py-32">
-      <p className="trace-line pl-10 font-mono text-xs tracking-[0.2em] text-copper">
+      <p className="trace-line pl-10 font-mono text-xs tracking-[0.2em] text-orange">
         04 / EXPERIENCE
       </p>
       <h2 className="mt-4 font-display text-3xl font-semibold text-silk md:text-4xl">

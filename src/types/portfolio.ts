@@ -28,6 +28,7 @@ export interface SpecItem {
 export interface CoreDomain {
   name: string
   icon: string
+  accent: string
   description: string
 }
 

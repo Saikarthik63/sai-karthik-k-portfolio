@@ -4,10 +4,19 @@ interface Props {
   project: Project
 }
 
+const DOMAIN_BADGE: Record<string, string> = {
+  'Embedded Systems': 'border-blue-dim bg-blue-dim/20 text-blue',
+  'IoT': 'border-cyan-dim bg-cyan-dim/20 text-cyan',
+  'AI / Machine Learning': 'border-purple-dim bg-purple-dim/20 text-purple',
+  'Computer Vision': 'border-emerald-dim bg-emerald-dim/20 text-emerald',
+}
+
 export default function ProjectCard({ project }: Props) {
+  const badgeClass = DOMAIN_BADGE[project.domain] ?? 'border-signal-dim bg-signal-dim/20 text-signal'
+
   return (
     <div className="flex h-full flex-col rounded-lg border border-panel-line bg-panel p-6 transition-all hover:-translate-y-1 hover:border-copper-dim">
-      <span className="w-fit rounded-full border border-signal-dim bg-signal-dim/20 px-3 py-1 font-mono text-[10px] tracking-widest text-signal">
+      <span className={`w-fit rounded-full border px-3 py-1 font-mono text-[10px] tracking-widest ${badgeClass}`}>
         {project.domain.toUpperCase()}
       </span>
 

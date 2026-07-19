@@ -28,7 +28,7 @@ export default function Footer() {
 
   return (
     <footer id="contact" className="pad border-t border-panel-line pt-20">
-      <p className="trace-line pl-10 font-mono text-xs tracking-[0.2em] text-copper">
+      <p className="trace-line pl-10 font-mono text-xs tracking-[0.2em] text-emerald">
         08 / CONTACT
       </p>
       <h2 className="mt-4 font-display text-3xl font-semibold text-silk md:text-4xl">
@@ -42,7 +42,7 @@ export default function Footer() {
       <a
         href={`${import.meta.env.BASE_URL}${profile.resumeFile}`}
         download
-        className="mt-6 inline-flex items-center gap-2 rounded-full border border-signal-dim bg-signal-dim/20 px-5 py-2.5 font-mono text-xs tracking-widest text-signal transition-colors hover:bg-signal-dim/30"
+        className="mt-6 inline-flex items-center gap-2 rounded-full border border-transparent bg-gradient-to-r from-cyan/20 via-blue/20 to-purple/20 px-5 py-2.5 font-mono text-xs tracking-widest text-silk shadow-[0_0_0_1px_rgba(77,141,255,0.4)] transition-shadow hover:shadow-[0_0_0_1px_rgba(34,211,238,0.6)]"
       >
         <Download size={14} /> DOWNLOAD RESUME
       </a>

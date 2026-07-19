@@ -1,13 +1,21 @@
 import { Award } from 'lucide-react'
 import { usePortfolio } from '../hooks/usePortfolio'
 
+const CERT_ACCENTS = [
+  'text-cyan bg-cyan-dim/25',
+  'text-blue bg-blue-dim/25',
+  'text-purple bg-purple-dim/25',
+  'text-emerald bg-emerald-dim/25',
+  'text-orange bg-orange-dim/25',
+]
+
 export default function EducationCerts() {
   const { education, certifications } = usePortfolio()
 
   return (
     <>
       <section id="certifications" className="pad border-t border-panel-line py-24 md:py-32">
-        <p className="trace-line pl-10 font-mono text-xs tracking-[0.2em] text-copper">
+        <p className="trace-line pl-10 font-mono text-xs tracking-[0.2em] text-blue">
           06 / CERTIFICATIONS
         </p>
         <h2 className="mt-4 font-display text-3xl font-semibold text-silk md:text-4xl">
@@ -15,13 +23,13 @@ export default function EducationCerts() {
         </h2>
 
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {certifications.map((c) => (
+          {certifications.map((c, i) => (
             <div
               key={c.name}
               className="flex flex-col gap-3 rounded-md border border-panel-line bg-panel/60 p-5 transition-colors hover:border-copper-dim"
             >
               <div className="flex items-start justify-between gap-3">
-                <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md border border-panel-line bg-void/60 text-signal">
+                <div className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-md border border-panel-line ${CERT_ACCENTS[i % CERT_ACCENTS.length]}`}>
                   <Award size={16} strokeWidth={1.75} />
                 </div>
                 <span className="whitespace-nowrap font-mono text-[11px] text-muted">
@@ -41,7 +49,7 @@ export default function EducationCerts() {
       </section>
 
       <section id="education" className="pad border-t border-panel-line py-24 md:py-32">
-        <p className="trace-line pl-10 font-mono text-xs tracking-[0.2em] text-copper">
+        <p className="trace-line pl-10 font-mono text-xs tracking-[0.2em] text-purple">
           07 / EDUCATION
         </p>
         <h2 className="mt-4 font-display text-3xl font-semibold text-silk md:text-4xl">
